@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: foodamate-service
+  main:
+    allow-circular-references: true
+
+# contextual colors
+shell:
+  out:
+    info: CYAN
+    success: GREEN
+    warning: YELLOW
+    error: RED
+
+data:
+  service:
+    url: http://sam-user-activity.eu-west-1.elasticbeanstalk.com
+
