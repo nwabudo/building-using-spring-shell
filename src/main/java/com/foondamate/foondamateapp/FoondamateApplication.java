@@ -19,14 +19,4 @@ public class FoondamateApplication {
         return new ShellHelper(terminal);
     }
 
-//    @Bean(name="restTemplate")
-//    public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder){
-//
-//        RestTemplate template = restTemplateBuilder.requestFactory(new BufferingClientHttpRequestFactory(new SimpleClientHttpRequestFactory()))
-//                .messageConverters(new MappingJackson2HttpMessageConverter())
-//                .build();
-//        return template;
-//
-//
-//    }
 }
