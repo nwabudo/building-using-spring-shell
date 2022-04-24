@@ -46,9 +46,9 @@ public class DataClientImpl implements DataClient{
         catch (HttpClientErrorException ex) {
             log.error("Error Status Code: {}", ex.getRawStatusCode());
         } catch (JsonMappingException ex) {
-            log.error("Error Status Code: {}", ex.getMessage());
+            log.error("Json Mapping Exception: {}", ex.getMessage());
         } catch (JsonProcessingException ex) {
-            log.error("Error Status Code: {}", ex.getMessage());
+            log.error("Json Processing Exception: {}", ex.getMessage());
         }
         return Collections.emptyMap();
     }
