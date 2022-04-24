@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
-import static com.foondamate.foondamateapp.utils.Utils.toDate;
+import static com.foondamate.foondamateapp.helpers.Utils.toDate;
 
 @Service
 @Slf4j
@@ -30,7 +30,7 @@ public class DataServiceImpl implements DataService {
 
             if(from.isAfter(to)) return Collections.emptyMap();//TODO: throw exception at this point with reasons
 
-            Map<LocalDate, Integer> map = new TreeMap<>();
+            Map<LocalDate, Integer> map = new LinkedHashMap<>();
             for (Map.Entry<String, Integer> entry : clientResponse.entrySet()) {
                 LocalDate date = toDate(entry.getKey());
                 if((date.isEqual(from) || date.isAfter(from)) && (date.isEqual(to) || date.isBefore(to))){

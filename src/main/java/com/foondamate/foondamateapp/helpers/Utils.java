@@ -1,4 +1,4 @@
-package com.foondamate.foondamateapp.utils;
+package com.foondamate.foondamateapp.helpers;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

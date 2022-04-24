@@ -14,7 +14,7 @@ import java.io.InputStream;
 import java.time.LocalDate;
 import java.util.Map;
 
-import static com.foondamate.foondamateapp.utils.Utils.toDate;
+import static com.foondamate.foondamateapp.helpers.Utils.toDate;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.lenient;
 
